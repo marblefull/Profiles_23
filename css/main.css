@@ -1,12 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css");
-@media (max-width: 992px) {
-  body main .inner .popup-gallery .magnific-img {
-    width: 40%;
-    background-color: darkkhaki;
-  }
-}
 html {
   box-sizing: border-box;
 }
@@ -79,9 +73,9 @@ html body main .inner .popup-gallery {
   justify-content: space-evenly;
 }
 html body main .inner .popup-gallery .magnific-img {
-  width: 25%;
-  height: 250px;
-  margin: 1.5em;
+  width: 30%;
+  height: 320px;
+  margin: 1.5em 0em 0em 1.5em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -153,7 +147,7 @@ html body footer .icons li a {
   color: rgba(255, 255, 255, 0.5);
 }
 html body footer .icons li a:hover {
-  color: #fff;
+  color: #2064a8;
 }
 html body footer .copyright {
   color: rgba(255, 255, 255, 0.5);
@@ -162,4 +156,10 @@ html body footer .copyright {
   list-style: none;
   padding: 0;
   text-transform: uppercase;
-}/*# sourceMappingURL=style.css.map */
+}
+
+@media screen and (max-width: 992px) {
+  body main .inner .popup-gallery .magnific-img {
+    min-width: 70%;
+  }
+}/*# sourceMappingURL=main.css.map */

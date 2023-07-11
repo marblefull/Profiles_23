@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css");
-@import "media.scss";
 
 html {
   box-sizing: border-box;
@@ -83,9 +82,9 @@ html {
           justify-content: space-evenly;
 
           .magnific-img {
-            width: 25%;
-            height: 250px;
-            margin: 1.5em;
+            width: 30%;
+            height: 320px;
+            margin: 1.5em 0em 0em 1.5em;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -171,7 +170,7 @@ html {
           }
 
           a:hover {
-            color: #fff;
+            color: #2064a8;
           }
         }
       }
@@ -187,3 +186,4 @@ html {
     }
   }
 }
+@import "media.scss";
