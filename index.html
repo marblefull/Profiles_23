@@ -17,14 +17,14 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <div class="container-fluid d-flex">
-      <a class="navbar-brand flex-lg-grow-1" href="#"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="container-fluid d-flex justify-content-end">
+      <!-- <a class="navbar-brand flex-lg-grow-1" href="#"></a> -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse"
+        aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse flex-lg-grow-0" id="navbarScroll">
-        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
+      <div class="collapse navbar-collapse flex-lg-grow-0" id="navbar-collapse">
+        <ul class="navbar-nav me-auto my-2 my-lg-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#resume">關於我</a>
           </li>
@@ -46,7 +46,12 @@
     </section>
 
     <section id="resume" class="resume">
-      <img src="./image/1-3_網頁用.png" alt="">
+      <!-- <picture>
+        <source media="(min-width: 992px)" srcset="./image/1-3_網頁用">
+        <source media="(min-width: 320px)" srcset="./image/-3.jpg">
+      </picture> -->
+      <img src="./image/1-3_網頁用.png" class="desktop-only" alt="">
+      <img src="./image/-3.jpg" class="mobile-only" alt="">
     </section>
 
     <section id="work" class="inner">
