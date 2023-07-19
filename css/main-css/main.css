@@ -110,6 +110,12 @@ html body main .inner .popup-gallery .magnific-img a .content {
   transition: max-height 0.5s ease, opacity 0.5s ease;
   max-height: 0;
 }
+html body main .inner .popup-gallery .magnific-img .zaza-hre {
+  margin: 0px 0px 3px 3px;
+  position: absolute;
+  right: 0px;
+  bottom: -4px;
+}
 html body main .inner .popup-gallery .magnific-img:hover {
   opacity: 1;
 }
@@ -163,7 +169,7 @@ html body footer .copyright {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   body main .resume .desktop-only {
     display: none;
   }
@@ -171,7 +177,7 @@ html body footer .copyright {
     min-width: 70%;
   }
 }
-@media screen and (min-width: 993px) {
+@media screen and (min-width: 992px) {
   body main .resume .mobile-only {
     display: none;
   }
