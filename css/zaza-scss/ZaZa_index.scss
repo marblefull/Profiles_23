@@ -1,5 +1,5 @@
-@import "../scss/setting";
-@import "../scss/media";
+@import "../zaza-scss/setting";
+@import "../zaza-scss/media";
 
 * {
     box-sizing: border-box;
@@ -164,53 +164,6 @@ body {
         }
     }
 
-    .back-top {
-        position: fixed;
-        right: 60px;
-        bottom: 60px;
-        // display: none;
-
-        img {
-            width: 48px;
-            height: 48px;
-            opacity: 0.6;
-            transform: rotate(90deg);
-        }
-    }
-
-    .fade-in {
-        opacity: 1;
-        animation-name: fadeInOpacity;
-        animation-iteration-count: 1;
-        animation-timing-function: ease-in;
-        animation-duration: 0.5s;
-    }
-
-    @keyframes fadeInOpacity {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-    .fade-out {
-        opacity: 0;
-        animation-name: fadeInOpacity;
-        animation-iteration-count: 1;
-        animation-timing-function: ease-out;
-        animation-duration: 0.5s;
-    }
-
-    @keyframes fadeInOpacity {
-        0% {
-            opacity: 1;
-        }
-        100% {
-            opacity: 0;
-        }
-    }
-
     main {
         width: 100%;
         position: relative;
@@ -333,17 +286,17 @@ body {
                     margin: 37px 37px 0px 37px;
                 }
                 .subject-title_1 {
-                    background-image: url(../image/subject-img/title-subject-01.png);
+                    background-image: url(../../image/zaza-image/subject-img/title-subject-01.png);
                     background-repeat: no-repeat;
                     background-size: 100%;
                 }
                 .subject-title_2 {
-                    background-image: url(../image/subject-img/title-subject-02.png);
+                    background-image: url(../../image/zaza-image/subject-img/title-subject-02.png);
                     background-repeat: no-repeat;
                     background-size: 100%;
                 }
                 .subject-title_3 {
-                    background-image: url(../image/subject-img/title-subject-03.png);
+                    background-image: url(../../image/zaza-image/subject-img/title-subject-03.png);
                     background-repeat: no-repeat;
                     background-size: 100%;
                 }
@@ -585,6 +538,7 @@ body {
 
             #CONTANT {
                 position: relative;
+                padding-bottom: 241px;
 
                 .socil-link {
                     margin-bottom: 58px;
@@ -653,9 +607,40 @@ body {
         }
     }
 
+    .b-top {
+        display: block;
+        background-color: #99a8b0;
+        width: 48px;
+        height: 48px;
+        text-align: center;
+        border-radius: 4px;
+        position: fixed;
+        bottom: 160px;
+        right: 178px;
+        transition: all 0.3s ease-in-out 0s;
+        opacity: 0;
+        z-index: 1000;
+
+        &::after {
+            content: "\f077";
+            font-family: FontAwesome;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 2em;
+            line-height: 55px;
+            color: #ffffff;
+        }
+
+        &:hover {
+            cursor: pointer;
+            background-color: #3c4c55;
+        }
+    }
+
     footer {
         height: 205px;
         font-size: $base-font-size * 0.75;
-        margin-top: 241px;
+        // margin-top: 241px;
     }
+
 }

@@ -1,32 +1,33 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css");
-html {
+* {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-html body {
+
+body {
   box-sizing: inherit;
   display: block;
-  padding: 0;
-  margin: 0;
   font-family: "Noto Sans TC", "Microsoft JhengHei", Tahoma;
 }
-html body h1,
-html body h2,
-html body h3,
-html body h4,
-html body h5,
-html body h6 {
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
   margin: 0;
   letter-spacing: 0.075em;
   color: rgb(81, 81, 81);
 }
-html body a {
+body a {
   text-decoration: none;
   color: rgb(81, 81, 81);
 }
-html body ul,
-html body li {
+body ul,
+body li {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -34,15 +35,15 @@ html body li {
   color: rgb(81, 81, 81);
   text-align: center;
 }
-html body main {
+body main {
   padding-top: 56px;
-  background-color: #F7F8F8;
+  background-color: #f7f8f8;
 }
-html body main .parallax {
+body main .parallax {
   width: 100%;
   overflow: hidden;
 }
-html body main .parallax .layer {
+body main .parallax .layer {
   width: 100%;
   height: 100vh;
   position: relative;
@@ -51,33 +52,33 @@ html body main .parallax .layer {
   background-position: center;
   background-size: cover;
 }
-html body main .resume {
+body main .resume {
   width: 100%;
   overflow: hidden;
   padding: 56px 0px;
 }
-html body main .resume img {
+body main .resume img {
   width: 100%;
 }
-html body main .resume img.mobile-oniy {
+body main .resume img.mobile-oniy {
   display: none;
 }
-html body main .inner {
+body main .inner {
   width: 100%;
   overflow: hidden;
   padding: 56px;
 }
-html body main .inner header {
+body main .inner header {
   display: flex;
   justify-content: center;
   padding: 56px 0px 56px 0px;
 }
-html body main .inner .popup-gallery {
+body main .inner .popup-gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-html body main .inner .popup-gallery .magnific-img {
+body main .inner .popup-gallery .magnific-img {
   width: 30%;
   height: 320px;
   margin: 1.5em 0em 0em 1.5em;
@@ -88,14 +89,14 @@ html body main .inner .popup-gallery .magnific-img {
   opacity: 0.5;
   display: inline-block;
 }
-html body main .inner .popup-gallery .magnific-img a {
+body main .inner .popup-gallery .magnific-img a {
   width: 100%;
 }
-html body main .inner .popup-gallery .magnific-img a img {
+body main .inner .popup-gallery .magnific-img a img {
   width: inherit;
   border-radius: 4px;
 }
-html body main .inner .popup-gallery .magnific-img a .content {
+body main .inner .popup-gallery .magnific-img a .content {
   font-size: 1.6em;
   letter-spacing: 0.075em;
   color: rgb(81, 81, 81);
@@ -110,20 +111,20 @@ html body main .inner .popup-gallery .magnific-img a .content {
   transition: max-height 0.5s ease, opacity 0.5s ease;
   max-height: 0;
 }
-html body main .inner .popup-gallery .magnific-img .zaza-hre {
-  margin: 0px 0px 3px 3px;
+body main .inner .popup-gallery .magnific-img .zaza-hre {
+  margin: 0px 10px 30px 0px;
   position: absolute;
   right: 0px;
   bottom: -4px;
 }
-html body main .inner .popup-gallery .magnific-img:hover {
+body main .inner .popup-gallery .magnific-img:hover {
   opacity: 1;
 }
-html body main .inner .popup-gallery .magnific-img:hover .content {
+body main .inner .popup-gallery .magnific-img:hover .content {
   opacity: 1;
   max-height: 2em;
 }
-html body main .inner .popup-gallery .magnific-img:hover .hvr-float {
+body main .inner .popup-gallery .magnific-img:hover .hvr-float {
   display: inline-block;
   vertical-align: middle;
   transform: perspective(1px) translateZ(0);
@@ -132,12 +133,143 @@ html body main .inner .popup-gallery .magnific-img:hover .hvr-float {
   transition-property: transform;
   transition-timing-function: ease-out;
 }
-html body main .inner .popup-gallery .magnific-img:hover .hvr-float:hover,
-html body main .inner .popup-gallery .magnific-img:hover .hvr-float:focus,
-html body main .inner .popup-gallery .magnific-img:hover .hvr-float:active {
+body main .inner .popup-gallery .magnific-img:hover .hvr-float:hover,
+body main .inner .popup-gallery .magnific-img:hover .hvr-float:focus,
+body main .inner .popup-gallery .magnific-img:hover .hvr-float:active {
   transform: translateY(-8px);
 }
-html body footer {
+body main #work-2 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background: #32eaaa;
+  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.25);
+  transition-min-height: 0.5s ease-in-out;
+  transition-max-height: 0.5s ease-in-out;
+}
+body main #work-2 > .panel {
+  transition: opacity 0.25s ease-in-out;
+  margin-bottom: 0;
+  position: relative;
+  padding: 3.5em 2.5em 2.5em 2.5em;
+  width: 100%;
+}
+body main #work-2 > .panel.inactive {
+  opacity: 0;
+}
+body main #work-2 > .panel.intro {
+  padding: 0;
+  height: 20em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+body main #work-2 > .panel.intro .pic {
+  text-decoration: none;
+  position: relative;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 17em;
+  height: 100%;
+}
+body main #work-2 > .panel.intro .pic:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../../image/main-image/1-1_網頁用.png");
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+body main #work-2 > .panel.intro .pic img {
+  position: relative;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+body main #work-2 > .panel.intro .pic .arrow {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -1.375em;
+  width: 2.75em;
+  height: 2.75em;
+  background: #000;
+  background: rgba(0, 0, 0, 0.75);
+  color: #026a9a;
+  text-align: center;
+  line-height: 2.75em;
+  font-size: 1.5em;
+  z-index: 1;
+  transition-width: 0.15s ease-in-out;
+  transition-padding-right: 0.15s ease-in-out;
+}
+body main #work-2 > .panel.intro .pic .arrow:before {
+  position: relative;
+  padding-right: 0;
+  top: 0.125em;
+}
+body main #work-2 > .panel.intro .pic .arrow span {
+  display: block;
+  text-indent: -9999px;
+}
+body main #work-2 > .panel.intro .pic:hover .arrow {
+  width: 3em;
+  padding-right: 0.25em;
+}
+body main #work-2 > .panel.intro header {
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 3.5em 2.5em;
+  margin-bottom: 0;
+  width: 100%;
+}
+body main #work-2 > .panel.intro header h1 {
+  line-height: 1.25em;
+  margin-bottom: 0;
+}
+body main #work-2 > .panel.intro header p {
+  letter-spacing: -0.015em;
+  font-size: 1.25em;
+  margin: 0.25em 0 0 0;
+}
+body .back-top {
+  display: inline-block;
+  background-color: rgb(137, 137, 137);
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 300px;
+  right: 60px;
+  transition: all 0.3s ease-in-out 0s;
+  opacity: 0;
+  z-index: 1000;
+}
+body .back-top::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 55px;
+  color: #ffffff;
+}
+body .back-top:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+body footer {
   padding: 6em 0 4em 0;
   background-color: #1d242a;
   text-align: center;
@@ -145,22 +277,22 @@ html body footer {
   justify-content: center;
   flex-direction: column;
 }
-html body footer .icons {
+body footer .icons {
   font-size: 1.25em;
   display: flex;
   justify-content: center;
   padding: 0.5em 0 1em 0;
 }
-html body footer .icons li {
+body footer .icons li {
   padding: 0 0.7em;
 }
-html body footer .icons li a {
+body footer .icons li a {
   color: rgba(255, 255, 255, 0.5);
 }
-html body footer .icons li a:hover {
+body footer .icons li a:hover {
   color: #2064a8;
 }
-html body footer .copyright {
+body footer .copyright {
   color: rgba(255, 255, 255, 0.5);
   font-size: 0.8em;
   letter-spacing: 0.225em;
