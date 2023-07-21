@@ -129,22 +129,24 @@
       </header>
 
       <div class="popup-gallery">
-        <div class="magnific-img">
-          <a href="https://youtube.com/embed/wiii3uZ8wJ0" class="media-popup">
-            <img src="./image/main-image/A4menu-1.jpg" alt="" />
-          </a>
+        <div class="magnific-media">
+          <video src="./media/赤柯山.mp4" poster="./image/main-image/赤柯山農企業.png" preload="auto"
+            controls="true" width="100%"></video>
         </div>
 
-        <div class="magnific-img">
-          <a href="https://youtube.com/embed/wiii3uZ8wJ0" class="media-popup">
-            <img src="./image/main-image/A4menu-1.jpg" alt="" />
-          </a>
+        <div class="magnific-media">
+          <video src="./media//B-copy_0720.mp4" poster="./image/main-image/世合企業.png" preload="auto"
+            controls="true" width="100%"></video>
         </div>
 
-        <div class="magnific-img">
-          <a href="https://youtube.com/v/wiii3uZ8wJ0" class="media-popup">
-            <img src="./image/main-image/A4menu-1.jpg" alt="" />
-          </a>
+        <div class="magnific-media">
+          <video src="./media/hohaw_0204.mp4" poster="./image/main-image/好森.png" preload="auto"
+            controls="true" width="100%"></video>
+        </div>
+
+        <div class="magnific-media">
+          <video src="" poster="./image/main-image/A4menu-1.jpg" preload="auto"
+            controls="true" width="100%"></video>
         </div>
       </div>
     </section>
@@ -365,20 +367,18 @@
             fixedContentPos: false,
 
             iframe: {
-
-
               markup:
                 '<div class="mfp-iframe-scaler">' +
                 '<div class="mfp-close"></div>' +
-                '<iframe class="mfp-iframe" src: "https://youtube.com/v/wiii3uZ8wJ0" frameborder="0" allowfullscreen></iframe>' +
+                '<iframe class="mfp-iframe" frameborder="0" accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; allowfullscreen></iframe>' +
                 "</div>",
-              patterns: {
-                youtube: {
-                  index: "youtube.com/",
-                  id: "v=",
-                  src: "//www.youtube.com/v/%id%?autoplay=1&rel=0&showinfo=0"
-                }
-              },
+              // patterns: {
+              //   youtube: {
+              //     index: "youtube.com/",
+              //     id: "v=",
+              //     src: "//www.youtube.com/embed/%id%?autoplay=1&rel=0&showinfo=0"
+              //   }
+              // },
               srcAction: "iframe_src"
             }
           });

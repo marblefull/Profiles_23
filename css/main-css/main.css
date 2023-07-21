@@ -78,6 +78,20 @@ body main .inner .popup-gallery {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+body main .inner .popup-gallery .magnific-media {
+  width: 40%;
+  height: 320px;
+  margin: 1.5em 0em 0em 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  opacity: 0.5;
+  display: inline-block;
+}
+body main .inner .popup-gallery .magnific-media:hover {
+  opacity: 1;
+}
 body main .inner .popup-gallery .magnific-img {
   width: 30%;
   height: 320px;
