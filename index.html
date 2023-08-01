@@ -24,16 +24,21 @@
         aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse flex-lg-grow-0" id="navbar-collapse">
-        <ul class="navbar-nav me-auto my-2 my-lg-0">
+      <div class="collapse navbar-collapse d-flex justify-content-end" id="navbar-collapse">
+        <ul class="navbar-nav my-lg-1">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#resume">關於我</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link disabled">作品展示</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#graphic-work">平面製作</a>
+         
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              作品展示
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#graphic-work">平面製作</a></li>
+              <li><a class="dropdown-item" href="#media-work">影音製作</a></li>
+              <li><a class="dropdown-item" href="#">網頁前端製作</a></li>
+            </ul>
           </li>
         </ul>
       </div>
