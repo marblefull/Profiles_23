@@ -41,14 +41,19 @@ body {
   font-family: "Noto Sans TC", "Microsoft JhengHei", Tahoma;
 
   nav {
-    .collapse {
-      margin: 0px 35px 0px 20px;
+    .container {
+      margin: 0;
+      width: 100%;
+      
+      .collapse {
+        margin: 0px 35px 0px 20px;
 
-      .dropdown {
-        ul {
-          min-width: 6rem;
-          li {
-            text-align: left;
+        .dropdown {
+          ul {
+            min-width: 6rem;
+            li {
+              text-align: left;
+            }
           }
         }
       }

@@ -36,13 +36,17 @@ body li {
   color: rgb(81, 81, 81);
   text-align: center;
 }
-body nav .collapse {
+body nav .container {
+  margin: 0;
+  width: 100%;
+}
+body nav .container .collapse {
   margin: 0px 35px 0px 20px;
 }
-body nav .collapse .dropdown ul {
+body nav .container .collapse .dropdown ul {
   min-width: 6rem;
 }
-body nav .collapse .dropdown ul li {
+body nav .container .collapse .dropdown ul li {
   text-align: left;
 }
 body main {
