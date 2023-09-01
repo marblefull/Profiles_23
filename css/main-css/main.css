@@ -165,17 +165,12 @@ body main .inner .popup-gallery .magnific-img:hover .hvr-float:focus,
 body main .inner .popup-gallery .magnific-img:hover .hvr-float:active {
   transform: translateY(-8px);
 }
-body main .inner ul {
+body main .inner .tab-content .img-style {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
 }
-body main .inner #work-2 {
-  width: 80%;
-  background: rgb(47, 74, 65);
-}
-body main .inner #work-2 > .panel {
-  padding: 3.5em 2.5em 2.5em 2.5em;
-  width: 100%;
+body main .inner .tab-content .img-style img {
+  width: 50%;
 }
 body .back-top {
   display: inline-block;
