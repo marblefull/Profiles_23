@@ -115,7 +115,7 @@
 
         <div class="magnific-img">
           <a href="./image/main-image/web-1.jpg" class="image-popup">
-            <img src="./image/main-image/web-1.jpg" alt="" />
+            <img src="./image/main-image/web.jpg" alt="" />
             <span class="content hvr-float">網頁設計</span>
           </a>
           <a href="./ZaZa_index.html" class="d-flex justify-content-end zaza-hre"><i class="fa fa-search-plus"></i></a>
@@ -174,43 +174,32 @@
         </div>
 
         <div class="magnific-media">
-          <video src="./media/山海經_縮檔.mp4" poster="./image/main-image/山海經.png" preload="auto" controls="true" width="100%"></video>
+          <video src="./media/山海經_縮檔.mp4" poster="./image/main-image/山海經.png" preload="auto" controls="true"
+            width="100%"></video>
         </div>
       </div>
     </section>
 
-    <!-- <section id="web-work" class="inner">
+    <section id="web-work" class="inner">
       <header>
         <h1>網頁前端作品</h1>
       </header>
 
-      <ul class="nav nav-tabs" id="myTab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
-            role="tab" aria-controls="home" aria-selected="true">Home</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
-            role="tab" aria-controls="profile" aria-selected="false">Profile</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button"
-            role="tab" aria-controls="contact" aria-selected="false">Contact</button>
-        </li>
+      <ul class="nav">
+        <li class="active tab-style" data-tab="tab1">wireform</li>
+        <li class="tab-style" data-tab="tab2">mockup</li>
       </ul>
 
-      <div class="tab-content" id="myTabContent">
-        <div class="img-style tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-          <img src="./image/main-image/zaza-W.F.png" alt="" />
-        </div>
-        <div class="img-style tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-          <img src="./image/main-image/web-1.jpg" alt="" />
-        </div>
-        <div class="img-style tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-          <img src="./image/main-image/廣告拉幅.jpg" alt="" />
-        </div>
+      <div class="tab-content" id="tab1">
+        <img class="img-style" src="./image/main-image/zaza-W.F.png" alt="" />
       </div>
-    </section> -->
+      <div class="tab-content" id="tab2">
+        <img class="img-style" src="./image/main-image/web-1.jpg" alt="" />
+      </div>
+      <div class="tab-content" id="tab3">
+        <img class="img-style" src="./image/main-image/廣告拉幅.jpg" alt="" />
+      </div>
+    </section>
   </main>
 
   <footer id="footer">
@@ -358,9 +347,9 @@
     });
   </script>
 
-<script>
-  
-</script>
+  <script>
+
+  </script>
   <!-- tab切換頁 -->
   <!-- <script>
     $(document).ready(function () {
@@ -378,6 +367,29 @@
     }
   </script> -->
 
+  <script>
+    $(document).ready(function () {
+  // 預設顯示第一個tab內容
+  $('.tab-content').first().show();
+
+  // 點擊tab標籤時觸發事件
+  $('ul.nav li').click(function () {
+    var tab_id = $(this).attr('data-tab');
+
+    // 隱藏所有tab內容
+    $('.tab-content').hide();
+
+    // 顯示點擊的tab內容
+    $('#' + tab_id).show();
+
+    // 移除所有tab標籤的active狀態
+    $('ul.nav li').removeClass('active');
+
+    // 添加點擊的tab標籤的active狀態
+    $(this).addClass('active');
+  });
+});
+  </script>
 </body>
 
 </html>

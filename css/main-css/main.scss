@@ -203,14 +203,16 @@ body {
       }
 
       // web-work
+      .tab-style{
+       padding: 10px;
+       
+      }
       .tab-content {
         .img-style {
           display: flex;
           justify-content: center;
-
-          img {
             width: 50%;
-          }
+          
         }
       }
     }

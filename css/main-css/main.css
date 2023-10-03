@@ -165,11 +165,12 @@ body main .inner .popup-gallery .magnific-img:hover .hvr-float:focus,
 body main .inner .popup-gallery .magnific-img:hover .hvr-float:active {
   transform: translateY(-8px);
 }
+body main .inner .tab-style {
+  padding: 10px;
+}
 body main .inner .tab-content .img-style {
   display: flex;
   justify-content: center;
-}
-body main .inner .tab-content .img-style img {
   width: 50%;
 }
 body .back-top {
