@@ -114,7 +114,7 @@
         </div>
 
         <div class="magnific-img">
-          <a href="./image/main-image/web-1.jpg" class="image-popup">
+          <a href="./image/main-image/web.jpg" class="image-popup">
             <img src="./image/main-image/web.jpg" alt="" />
             <span class="content hvr-float">網頁設計</span>
           </a>
@@ -152,7 +152,8 @@
         </div>
 
         <div class="magnific-media">
-          <video src="" poster="" preload="auto" controls="true" width="100%"></video>
+          <video src="./media/yotta_0204.mp4" poster="./image/main-image/yotta_0204.png" preload="auto" controls="true"
+            width="100%"></video>
         </div>
       </div>
 
@@ -169,6 +170,11 @@
         </div>
 
         <div class="magnific-media">
+          <video src="./media/earth.mp4" poster="./image/main-image/earth.png" preload="auto" controls="true"
+            width="100%"></video>
+        </div>
+
+        <div class="magnific-media">
           <video src="./media/BoBo.MOV" poster="./image/main-image/bobo.png" preload="auto" controls="true"
             width="100%"></video>
         </div>
@@ -180,7 +186,7 @@
       </div>
     </section>
 
-    <section id="web-work" class="inner">
+    <!-- <section id="web-work" class="inner">
       <header>
         <h1>網頁前端作品</h1>
       </header>
@@ -199,7 +205,7 @@
       <div class="tab-content" id="tab3">
         <img class="img-style" src="./image/main-image/廣告拉幅.jpg" alt="" />
       </div>
-    </section>
+    </section> -->
   </main>
 
   <footer id="footer">
@@ -350,46 +356,30 @@
   <script>
 
   </script>
-  <!-- tab切換頁 -->
+
   <!-- <script>
     $(document).ready(function () {
-      tabCutover();
-    });
+      // 預設顯示第一個tab內容
+      $('.tab-content').first().show();
 
-    function tabCutover() {
-      var $li = $('ul.tab-title li');
-      $($li.eq(0).addClass('active').find('a').attr('href')).siblings('.tab-inner').hide();
+      // 點擊tab標籤時觸發事件
+      $('ul.nav li').click(function () {
+        var tab_id = $(this).attr('data-tab');
 
-      $li.click(function () {
-        $($(this).find('a').attr('href')).show().siblings('.tab-inner').hide();
-        $(this).addClass('active').siblings('.active').removeClass('active');
+        // 隱藏所有tab內容
+        $('.tab-content').hide();
+
+        // 顯示點擊的tab內容
+        $('#' + tab_id).show();
+
+        // 移除所有tab標籤的active狀態
+        $('ul.nav li').removeClass('active');
+
+        // 添加點擊的tab標籤的active狀態
+        $(this).addClass('active');
       });
-    }
+    });
   </script> -->
-
-  <script>
-    $(document).ready(function () {
-  // 預設顯示第一個tab內容
-  $('.tab-content').first().show();
-
-  // 點擊tab標籤時觸發事件
-  $('ul.nav li').click(function () {
-    var tab_id = $(this).attr('data-tab');
-
-    // 隱藏所有tab內容
-    $('.tab-content').hide();
-
-    // 顯示點擊的tab內容
-    $('#' + tab_id).show();
-
-    // 移除所有tab標籤的active狀態
-    $('ul.nav li').removeClass('active');
-
-    // 添加點擊的tab標籤的active狀態
-    $(this).addClass('active');
-  });
-});
-  </script>
 </body>
 
 </html>
