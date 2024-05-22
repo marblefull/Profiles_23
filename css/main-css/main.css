@@ -237,7 +237,15 @@ body footer .copyright {
     display: none;
   }
   body main .inner .popup-gallery .magnific-img {
-    min-width: 70%;
+    min-width: 90%;
+  }
+  body main .inner .popup-gallery .magnific-media {
+    min-width: 90%;
+  }
+  body .back-top {
+    width: 36px;
+    height: 36px;
+    right: 32px;
   }
 }
 @media screen and (min-width: 992px) {

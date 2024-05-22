@@ -10,10 +10,18 @@
             .inner {
                 .popup-gallery {
                     .magnific-img {
-                        min-width: 70%;
+                        min-width: 90%;
+                    }
+                    .magnific-media {
+                        min-width: 90%;
                     }
                 }
             }
+        }
+        .back-top {
+            width: 36px;
+            height: 36px;
+            right: 32px;
         }
     }
 }
